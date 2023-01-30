@@ -9,48 +9,48 @@ library(ineq)
 dadata <- read_html("https://www.sports-reference.com/cbb/conferences/big-east/2023-stats.html#conference-stats", header = FALSE)
 dat <- html_table(dadata, fill = TRUE)
 dataa <- data.frame(dat)
-write.csv(dataa, file="~/documents/markdownfiles/bigeast.csv")
-bigeastplayers <- read.csv(file = "~/documents/markdownfiles/bigeast.csv", skip = 1, header = TRUE, as.is = TRUE)
+write.csv(dataa, file="~/bigeast.csv")
+bigeastplayers <- read.csv(file = "~/bigeast.csv", skip = 1, header = TRUE, as.is = TRUE)
 
 ####
 
 dadata <- read_html("https://www.sports-reference.com/cbb/conferences/big-12/2023-stats.html#conference-stats", header = FALSE)
 dat <- html_table(dadata, fill = TRUE)
 dataa <- data.frame(dat)
-write.csv(dataa, file="~/documents/markdownfiles/bigeast.csv")
-big12players <- read.csv(file = "~/documents/markdownfiles/bigeast.csv", skip = 1, header = TRUE, as.is = TRUE)
+write.csv(dataa, file="~/bigeast.csv")
+big12players <- read.csv(file = "~/bigeast.csv", skip = 1, header = TRUE, as.is = TRUE)
 
 ####
 
 dadata <- read_html("https://www.sports-reference.com/cbb/conferences/sec/2023-stats.html#conference-stats", header = FALSE)
 dat <- html_table(dadata, fill = TRUE)
 dataa <- data.frame(dat)
-write.csv(dataa, file="~/documents/markdownfiles/bigeast.csv")
-secplayers <- read.csv(file = "~/documents/markdownfiles/bigeast.csv", skip = 1, header = TRUE, as.is = TRUE)
+write.csv(dataa, file="/bigeast.csv")
+secplayers <- read.csv(file = "~/bigeast.csv", skip = 1, header = TRUE, as.is = TRUE)
 
 ####
 
 dadata <- read_html("https://www.sports-reference.com/cbb/conferences/big-ten/2023-stats.html#conference-stats", header = FALSE)
 dat <- html_table(dadata, fill = TRUE)
 dataa <- data.frame(dat)
-write.csv(dataa, file="~/documents/markdownfiles/bigeast.csv")
-bigtenplayers <- read.csv(file = "~/documents/markdownfiles/bigeast.csv", skip = 1, header = TRUE, as.is = TRUE)
+write.csv(dataa, file="~/bigeast.csv")
+bigtenplayers <- read.csv(file = "~/bigeast.csv", skip = 1, header = TRUE, as.is = TRUE)
 
 ####
 
 dadata <- read_html("https://www.sports-reference.com/cbb/conferences/pac-12/2023-stats.html#conference-stats", header = FALSE)
 dat <- html_table(dadata, fill = TRUE)
 dataa <- data.frame(dat)
-write.csv(dataa, file="~/documents/markdownfiles/bigeast.csv")
-pac12players <- read.csv(file = "~/documents/markdownfiles/bigeast.csv", skip = 1, header = TRUE, as.is = TRUE)
+write.csv(dataa, file="~/bigeast.csv")
+pac12players <- read.csv(file = "~/bigeast.csv", skip = 1, header = TRUE, as.is = TRUE)
 
 ####
 
 dadata <- read_html("https://www.sports-reference.com/cbb/conferences/acc/2023-stats.html#conference-stats", header = FALSE)
 dat <- html_table(dadata, fill = TRUE)
 dataa <- data.frame(dat)
-write.csv(dataa, file="~/documents/markdownfiles/bigeast.csv")
-accplayers <- read.csv(file = "~/documents/markdownfiles/bigeast.csv", skip = 1, header = TRUE, as.is = TRUE)
+write.csv(dataa, file="~/bigeast.csv")
+accplayers <- read.csv(file = "~/bigeast.csv", skip = 1, header = TRUE, as.is = TRUE)
 
 ##
 
@@ -170,39 +170,39 @@ colnames(schdata)[5] = "gini"
 biggie <- read_html("https://www.sports-reference.com/cbb/conferences/big-east/2023-ratings.html", header = FALSE)
 bigus <- html_table(biggie, fill = TRUE)
 biggums <- data.frame(bigus)
-write.csv(biggums, file="~/documents/markdownfiles/bigeastteams.csv")
-bigeast <- read.csv(file = "~/documents/markdownfiles/bigeastteams.csv", skip = 1, header = TRUE, as.is = TRUE)
+write.csv(biggums, file="~/bigeastteams.csv")
+bigeast <- read.csv(file = "~/bigeastteams.csv", skip = 1, header = TRUE, as.is = TRUE)
 
 biggie <- read_html("https://www.sports-reference.com/cbb/conferences/big-12/2023-ratings.html", header = FALSE)
 bigus <- html_table(biggie, fill = TRUE)
 biggums <- data.frame(bigus)
-write.csv(biggums, file="~/documents/markdownfiles/bigeastteams.csv")
-big12 <- read.csv(file = "~/documents/markdownfiles/bigeastteams.csv", skip = 1, header = TRUE, as.is = TRUE)
+write.csv(biggums, file="~/bigeastteams.csv")
+big12 <- read.csv(file = "~/bigeastteams.csv", skip = 1, header = TRUE, as.is = TRUE)
 
 biggie <- read_html("https://www.sports-reference.com/cbb/conferences/big-ten/2023-ratings.html", header = FALSE)
 bigus <- html_table(biggie, fill = TRUE)
 biggums <- data.frame(bigus)
-write.csv(biggums, file="~/documents/markdownfiles/bigeastteams.csv")
-bigten <- read.csv(file = "~/documents/markdownfiles/bigeastteams.csv", skip = 1, header = TRUE, as.is = TRUE)
+write.csv(biggums, file="~/bigeastteams.csv")
+bigten <- read.csv(file = "~/bigeastteams.csv", skip = 1, header = TRUE, as.is = TRUE)
 
 biggie <- read_html("https://www.sports-reference.com/cbb/conferences/sec/2023-ratings.html", header = FALSE)
 bigus <- html_table(biggie, fill = TRUE)
 biggums <- data.frame(bigus)
-write.csv(biggums, file="~/documents/markdownfiles/bigeastteams.csv")
-sec <- read.csv(file = "~/documents/markdownfiles/bigeastteams.csv", skip = 1, header = TRUE, as.is = TRUE)
+write.csv(biggums, file="~/bigeastteams.csv")
+sec <- read.csv(file = "~/bigeastteams.csv", skip = 1, header = TRUE, as.is = TRUE)
 
 biggie <- read_html("https://www.sports-reference.com/cbb/conferences/pac-12/2023-ratings.html", header = FALSE)
 bigus <- html_table(biggie, fill = TRUE)
 biggums <- data.frame(bigus)
-write.csv(biggums, file="~/documents/markdownfiles/bigeastteams.csv")
-pac12 <- read.csv(file = "~/documents/markdownfiles/bigeastteams.csv", skip = 1, header = TRUE, as.is = TRUE)
+write.csv(biggums, file="~/bigeastteams.csv")
+pac12 <- read.csv(file = "~/bigeastteams.csv", skip = 1, header = TRUE, as.is = TRUE)
 
 
 biggie <- read_html("https://www.sports-reference.com/cbb/conferences/acc/2023-ratings.html", header = FALSE)
 bigus <- html_table(biggie, fill = TRUE)
 biggums <- data.frame(bigus)
-write.csv(biggums, file="~/documents/markdownfiles/bigeastteams.csv")
-acc <- read.csv(file = "~/documents/markdownfiles/bigeastteams.csv", skip = 1, header = TRUE, as.is = TRUE)
+write.csv(biggums, file="~/bigeastteams.csv")
+acc <- read.csv(file = "~/bigeastteams.csv", skip = 1, header = TRUE, as.is = TRUE)
 
 ####
 
